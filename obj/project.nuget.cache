@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L3eL8SH6TXs=",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\projets\\blazor-webcomponent-glitch\\BlazorWebcomponentGlitch\\BlazorWebcomponentGlitch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mitchellma\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.0-preview.5.25277.114\\microsoft.aspnetcore.app.internal.assets.10.0.0-preview.5.25277.114.nupkg.sha512"
+  ],
+  "logs": []
+}
