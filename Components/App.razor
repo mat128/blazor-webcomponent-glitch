@@ -10,6 +10,35 @@
     <link rel="stylesheet" href="@Assets["BlazorWebcomponentGlitch.styles.css"]" />
     <ImportMap />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script>
+        customElements.define("demo-paragraph",
+            class extends HTMLParagraphElement {
+                constructor() {
+                    super()
+                }
+
+                connectedCallback() {
+                    this.style.color = "red";
+                    this.style.fontWeight = "bold";
+                    this.textContent = `This is a custom paragraph element! Original text: ${this.textContent}`;
+                }
+            }, { extends: "p" });
+
+        customElements.define("demo-message",
+            class extends HTMLElement {
+                constructor() {
+                    super();
+                }
+
+                connectedCallback() {
+                    for (let i = 0; i < 3; i++) {
+                        const div = document.createElement('div');
+                        div.innerHTML = `Hello from Webcomponents ${i}`;
+                        this.appendChild(div);
+                    }
+                }
+           });
+    </script>
     <HeadOutlet />
 </head>
 
